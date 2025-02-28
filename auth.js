@@ -8,6 +8,6 @@ function PPP() {
         sessionStorage.setItem("loggedIn", "true");
         window.location.href = "links.html";
     } else {
-        alert("パスワードが違います");
+        alert("パスワードが違います"); 
     }
 }
