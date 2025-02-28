@@ -58,13 +58,7 @@
             margin: 2em 0 0;
         }
     </style>
-    <script src="auth.js" defer>
-        window.onload = function() {
-            if (sessionStorage.getItem("loggedIn") === "true") {
-            window.location.href = "links.html";
-            }
-        }
-    </script>
+    <script src="auth.js" defer></script>
 </head>
 <body>
     <img src="file/ASF_logo.png" alt="ロゴ" class="logo1">
@@ -72,7 +66,7 @@
         <h2>パスワードを入力してください</h2>
     </div>
     <div class="input-container"> 
-        <input type="password" id="password" placeholder="パスワード">
+        <input type="password" id="ASF-AfterService" placeholder="パスワード">
         <button onclick="PPP()">ログイン</button>
     </div>
     
