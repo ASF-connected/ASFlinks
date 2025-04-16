@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>車種・生産年選択</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: left;
+            background-color: #f4f4f4;
+            padding-top: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        h2 {
+            font-size: 28px;
+            color: #333;
+        }
+        .logo2 {
+            max-width: 25%;
+            width: 300px;  
+            height: auto; 
+            position: absolute;
+            top: 1%;
+            right: 3%;
+        }
+        .photo1 {
+            max-width: 90%;
+            height: auto; 
+        }
+        .space-A{
+            margin: 0 2em 0;
+        }
+        .space-B{
+            margin: 2em 0 0;
+        }
+        .link-table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+        }
+        .link-table td {
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+        .link-table a {
+            display: block;
+            padding: 10px;
+            color: rgb(50, 22, 205);
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .link-table a:hover {
+            background-color: #A8A8A8;
+        }
+        .table-container {
+            overflow-x: auto;
+            width: 100%;
+        }
+        table {
+            width: 100%;
+            min-width: 600px;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            if (sessionStorage.getItem("loggedIn") !== "true") {
+                window.location.href = "index.html";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>車種・生産年選択</h2>   
+    <img src="/file/ASF_logo.png" alt="ロゴ" class="logo2">
+    <p class = "space-A">最終更新日 : 2025/02/26</p>
+    <p class = "space-B"></p>
+    <div class="table-container">
+        <table class="link-table table">
+            <tr>
+                <td style="background-color: rgb(112, 171, 255); font-size: 20px; width: 15%;">車種名</td>
+                <td style="background-color: rgb(112, 171, 255); font-size: 20px; width: 15%;">モデル名</td>
+                <td style="background-color: rgb(112, 171, 255); font-size: 20px; width: 20%;">生産年</td>
+                <td style="background-color: rgb(112, 171, 255); font-size: 20px; width: 50%;">内容</td>
+            </tr>
+            <tr>
+                <td rowspan="4">G050</td> 
+                <td rowspan="4">ASF2.0</td>
+            </tr>
+            <tr>
+                <td><a href="ASF2.0-2023.html">2023</a></td>
+                <td>2023年製造車両のアフターサービス資料集</td>
+            </tr>
+            <tr>
+                <td><a href="ASF2.0-2024.html">2024</a></td>
+                <td>2024年製造車両のアフターサービス資料集</td>
+            </tr>
+            <tr>
+                <td><a href="ASF2.0-2025.html">2025</a></td>
+                <td>2025年製造車両のアフターサービス資料集</td>
+            </tr>
+            <!-- <tr>
+                <td><a href="https://example.com/link3">リンク5</a></td>
+                <td>5</td>
+            </tr>-->
+            <!-- <tr>
+                <td rowspan="2">G050P</td> 
+                <td rowspan="2">ASF2.0<br>ブッチャー</td>
+            </tr>
+            <tr>
+                <td><a href=".html">2025</a></td>
+                <td>2025年製造車両のアフターサービス資料集</td> -->
+            <!-- </tr> -->
+            <!-- <tr>
+                <td rowspan="2">G051</td> 
+                <td rowspan="2">ASF2.0<br>四座</td>
+            </tr>
+            <tr>
+                <td><a href=".html">2025</a></td>
+                <td>2025年製造車両のアフターサービス資料集</td>
+            </tr> -->
+        </table>
+    </div>
+    <p class="space-A">
+        下の画像のDATEが生産年です(運転席Bピラーにある車両仕様ラベル)<br>
+        <img src="/file/vehicle.png" alt="ロゴ" width="500" class="photo1" style="vertical-align: middle; margin-left: 5px;">
+    </p>
+</body>
+</html>

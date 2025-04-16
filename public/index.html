@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASFサービスポータルサイト</title>
+    <style>
+        .logo1 {
+            max-width: 40%;
+            width: 300px;  
+            height: auto;  
+            display: block;  
+            margin: 0 auto;  
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;               
+        }
+        h2 {
+            font-size: auto;
+            color: #333;
+        }
+        .input-container {
+            max-width: 100%;
+            display: flex;           
+            align-items: center;
+        }
+        input {
+            font-size: auto;
+            padding: 10px;
+            width: 250px;
+            margin: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            font-size: auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .center{
+            text-align: center;
+        }
+        .space-B{
+            margin: 2em 0 0;
+        }
+    </style>
+    <script src="auth.js" defer></script>
+</head>
+<body>
+    <img src="/file/ASF_logo.png" alt="ロゴ" class="logo1">
+    <div class="input-container"> 
+        <h2>パスワードを入力してください</h2>
+    </div>
+    <div class="input-container"> 
+        <input type="password" id="ASF-AfterService" placeholder="パスワード">
+        <button onclick="PPP()">ログイン</button>
+    </div>
+    
+    <p class = "space-B"></p>    
+
+    <div class="center">
+        <p class="contact">
+            お問い合わせ先<br>
+            vehicledevelopment@asf-ev.com
+        </p>
+    </div>
+</body>
+</html>
